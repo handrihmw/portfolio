@@ -348,43 +348,6 @@
   </div>
 </footer>
 
-<script>
-  var Main = {
-      data:function() {
-          var that = this;
-          return {
-              index: 0,
-              pageNum: 0,
-              opts: {
-                  start: 1,
-                  dir: 'v',
-                  loop: false,
-                  duration: 300,
-                  beforeChange: function(ele, current, next) {
-                      console.log('before', current, next)
-                      that.index = next;
-                  },
-                  afterChange: function(ele, current) {
-                      that.index = current;
-                      console.log('after', current)
-                  }
-              }
-          };
-      },
-      methods: {
-          moveTo: function(index) {
-              this.$refs.fullpage.$fullpage.moveTo(index, true);
-          },
-          showPage: function() {
-              this.pageNum++;
-              this.$refs.fullpage.$fullpage.$update();
-          }
-      }
-  }
-  // var Ctor = Vue.extend(Main)
-  // var app = new Ctor().$mount('#app')
-</script>
-
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js'></script>
