@@ -539,11 +539,10 @@ width:110px;
   }
 }
  
-@media (max-width: 700px) {
+@media (max-width: 720px) {
   .imageGrid .tile {
-    width: 100%;
+    width: 90%;
   }
-  
 }
 
 @media only screen and (max-width: 992px) {
@@ -561,3 +560,5 @@ width:110px;
     top: 0;
   }
 }
+
+
