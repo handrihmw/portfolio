@@ -298,7 +298,7 @@ p{
 	position:absolute;
 	top:0;
 	left:0;
-width:110px;
+	width:110px;
 	font-weight:bold;
 	font-size:13px;
 	color:#ffffff;
@@ -542,6 +542,12 @@ width:110px;
 @media (max-width: 720px) {
   .imageGrid .tile {
     width: 90%;
+  }
+}
+
+@media (max-width: 720px) {
+  .skillbar .tile {
+    width: 100%;
   }
 }
 
