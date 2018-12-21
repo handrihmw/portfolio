@@ -1,0 +1,27 @@
+.tooltip {
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    /* display: inline-block; */
+    /* transform: translate3d(-50%, -50%, 0); */
+    -webkit-user-select: none;
+  }
+  .tooltip::before {
+    content: attr(data-tool);
+    position: absolute;
+    left: 20%;
+    bottom: 100%;
+    padding: 8px 12px;
+    background: rgba(34,50,84,0.98);
+    color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    transform: translate3d(-50%, 5px, 0) scale(0.5);
+  }
+  .tooltip.active::before {
+    opacity: 1;
+    transform: translate3d(-50%, -10px, 0) scale(1);
+  }
