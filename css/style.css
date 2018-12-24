@@ -538,12 +538,6 @@ p{
     width: 50%;
   }
 }
- 
-@media (max-width: 720px) {
-  .imageGrid .tile {
-    width: 90%;
-  }
-}
 
 @media (max-width: 720px) {
   .skillbar .tile {
